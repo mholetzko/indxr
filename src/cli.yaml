@@ -1,0 +1,21 @@
+name: indxr
+version: "1.0"
+author: Matthias Holetzko <mholetzko@gmx.net>
+about: Index everything you want 
+args:
+subcommands:
+    - create:
+        about: creates and indxr index
+        args:
+            - debug:
+                short: d
+                about: print debug information
+    - login:
+        about: logs you in to the indxr remote db
+
+    - set: creates an indx set
+    - add: adds a document to the index
+    - find: finds an index document
+    - rm: removes an indexed document
+    - send: sends an index docuemnt (remote only)
+    - get: shows all received and not yet locally taken documents (remote only)
